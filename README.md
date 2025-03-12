@@ -57,8 +57,8 @@ rstunc \
   --server-addr 1.2.3.4:6060 \
   --password 123456 \
   --cert path/to/cert.der \
-  --tcp-mapping OUT^0.0.0.0:9900^8800 \
-  --udp-mapping IN^0.0.0.0:9100^8100 \
+  --tcp-mapping IN^0.0.0.0:9800^8900,OUT^0.0.0.0:8900^8800 \
+  --udp-mapping IN^0.0.0.0:8700^7800,OUT^0.0.0.0:7800^7700 \
   --loglevel D
 ```
   - `--server-addr`, domain name or IP address of the server, port is always required.
