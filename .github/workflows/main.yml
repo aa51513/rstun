@@ -4,7 +4,8 @@ on:
   push:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
-
+permissions:
+  contents: read
 jobs:
   linux-x86_64:
     name: Linux x86_64
